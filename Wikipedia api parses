@@ -1,0 +1,6 @@
+format = json
+action = query
+prop = extracts
+exlimit = _LIMIT_
+titles = _KEYWORDS_ 
+redirects = true (fix bad keywords)
