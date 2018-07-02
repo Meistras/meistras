@@ -1,6 +1,18 @@
 format = json
 action = query
 prop = extracts
-exlimit = _LIMIT_
+exlimit = _LIMIT_ (ussualy 1)
 titles = _KEYWORDS_ 
 redirects = true (fix bad keywords)
+
+
+/////////////////////////////////////////////////////////////////////
+Communitcation between extension and server
+
+***use CORS requests*** 
+IMPORTANT: add the php server domain to permissions tag in manifest.json file
+***
+Setting up a server for CORS request requires an .htaccess file with headers 
+***
+
+FOR wiki api titles keywords use javascript in the extension to extract the current page (modeled by wiki) title, which can be put into titles parse.
